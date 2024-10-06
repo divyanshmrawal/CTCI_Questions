@@ -3,39 +3,6 @@
 
 //ANSWER-->
 
-//My Solution :---
-import java.util.LinkedList;
-public class Q3_Delete_Middle_Node {
-
-    public static void main(String[] args) {
-        //Creating linkedlist
-        LinkedList<Integer> list=new LinkedList<>();
-        //adding elements in linkedlist
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-        //finding length of list
-int size=list.size();
-// finding middel element of list
-int middel=0;
-if(size%2==0){
-     middel=(size/2)-1;
-}
-else{
-     middel=(size/2);
-}
-//Original list
-System.out.println(list);
-//remove middel element
-list.remove(middel);
-//updated list
-System.out.println(list);
-    }
-}
-
-//Book solution:----
 class LinkedListNode {
     int data;
     LinkedListNode next;
